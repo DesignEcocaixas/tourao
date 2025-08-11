@@ -20,7 +20,7 @@ function startLights() {
 }
 
 // FUNÇÃO PARA INTRO DA LOGO COM ANIMAÇÃO
-/*document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', () => {
     const splash = document.getElementById('splash');
     const logo = document.getElementById('logo');
 
@@ -29,7 +29,7 @@ function startLights() {
     setTimeout(() => splash.classList.add('hide'), 2400);   // Tela preta desaparece
 
     startLights();
-});*/
+});
 
 window.addEventListener('resize', () => {
     document.querySelectorAll('.blur-light').forEach(moveLight);
@@ -139,3 +139,4 @@ setInterval(() => {
         enterBtn.classList.remove('shake');
     }, 400); // mesma duração da animação
 }, 2000); // intervalo entre as sacudidas
+
