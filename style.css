@@ -4,6 +4,15 @@
     box-sizing: border-box;
 }
 
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 html,
 body {
     height: 100%;
@@ -14,7 +23,10 @@ body {
     font-family: 'Poppins', serif;
     position: relative;
     /*COMENTAR O BACKGROUND EM CASO DE USO DE VÍDEO*/
-    background: linear-gradient(to bottom, #f4b804 50%, transparent 100%);
+    background: linear-gradient(to bottom, #f4b804 20%, transparent 100%);
+    
+    /* Animação de entrada */
+    animation: fadeIn 1.5s ease-in forwards;
 }
 
 #bgVideo {
@@ -38,6 +50,7 @@ body {
 /*ALTERA AS CORES DO CONTORNO DA LOGO*/
 .logo img {
     width: 200px;
+    margin-top: 20px;
     /*filter: drop-shadow(0 0 10px #f4ee04) drop-shadow(0 0 5px #f4ee04) drop-shadow(0 0 5px #f4ee04);*/
 }
 
@@ -87,11 +100,12 @@ h2 {
     align-items: center;
     flex-direction: column;
     gap: 10px;
+    margin-top: 20px;
 }
 
 /*ESTILIZAÇÃO DOS BOTÕES*/
 .link-container {
-    background-color: #930fec;
+    background-color: #ec0f0f;
     background-image: radial-gradient(#b10000 0.5px, transparent 0.5px);
     background-size: 5px 5px;
     border-radius: 40px;
@@ -186,7 +200,7 @@ h2 {
     width: 200px;
     padding: 20px;
     height: 90px;
-    background-color: #930fec;
+    background-color: #ec0f0f;
     background-image: radial-gradient(#b10000 0.5px, transparent 0.5px);
     background-size: 5px 5px;
     border-radius: 10px 10px 0px 0px;
